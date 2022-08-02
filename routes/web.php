@@ -18,3 +18,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics', "ComicController@index")->name('data.index');
+Route::get('/comics/{comic}',"ComicController@show")->name('data.show');

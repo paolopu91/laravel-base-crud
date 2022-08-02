@@ -48,7 +48,12 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+        // reading data of id
+        $data = Comic::findOrFail($id);
+
+        return view("data.show",[
+            "data"=> $data
+        ])->first;
     }
 
     /**
