@@ -9,31 +9,41 @@
     @csrf
         
         <div class="mb-3">
-            <label for="titleInput" class="form-label">Title</label>
+            <label for="titleInput" class="form-label border-bottom">Title</label>
             <input type="text" class="form-control" name="title" id="titleInput" placeholder="Title Comic">
         </div>
 
         <div class="mb-3 pt-3">
-            <label for="text-input" class="form-label">Description</label>
-            <textarea class="form-control" name="text" id="text-input" rows="3" placeholder="Write here"></textarea>
+            <label for="text-input" class="form-label border-bottom">Description</label>
+            <textarea class="form-control" name="description" id="text-input" rows="3" placeholder="Write here"></textarea>
         </div>
 
-        {{-- <div class="mb-3 pt-3">
-            <label for="priceInput" class="form-label">Price</label>
-            <input type="decimal" class="form-control" name="price" id="priceInput" placeholder="10$">
+        <div class="mb-3 pt-3">
+            <label for="thumbInpunt" class="form-label border-bottom">thumb</label>
+            <input type="text" class="form-control" name="thumb" id="thumbInpunt" placeholder="link here">
         </div>
-         --}}
 
-        {{-- <div class=" container btn-group pt-5">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Choose your img
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><button><img src="https://fumettologica.it/wp-content/uploads/2020/06/dc-comics-diamond.jpeg" alt=""></button></li>
-              <li><button><img src="https://nientepopcorn.b-cdn.net/wp-content/uploads/2019/01/tutti_i_film_dc_universe_watchmen_zack_snyder.jpg" alt=""></button></li>
-              <li><button><img src="https://i0.wp.com/www.universalmovies.it/wp-content/uploads/2021/08/marvel-vs-dc-film-serie-tv-2023.jpg?resize=1210%2C642&ssl=1" alt=""></button></li>
-            </ul>
-        </div> --}}
+        <div class="mb-3 pt-3">
+            <label for="priceInput" class="form-label border-bottom">Price</label>
+            <input type="text" class="form-control" name="price" id="priceInput" placeholder="10,99">
+        </div>
+
+        
+        <div class="mb-3 pt-3">
+            <label for="seriesInput" class="form-label border-bottom">Series</label>
+            <input type="text" class="form-control" name="series" id="seriesInput" placeholder="Series">
+        </div>
+
+        <div class="mb-3 pt-3">
+            <label for="sale_date" class="form-label border-bottom">Sale Date</label>
+            <input type="text" class="form-control" name="sale_date" id="sale_date" placeholder="02/10/2018">
+        </div>
+         
+
+        <div class="mb-3 pt-3">
+            <label for="type" class="form-label border-bottom">Type</label>
+            <input type="text" class="form-control" name="type" id="type" placeholder="type...">
+        </div>
 
         <div class="d-flex gap-2 pt-5 justify-content-center">
             <button type="submit" class="btn btn-primary">

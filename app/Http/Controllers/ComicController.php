@@ -37,19 +37,26 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        dump($request);
-        // $data = $request->all();
-        // dump($data);
-        // $newData = new Comic();
+    
+        $data=$request->all();
+        dump($data);
 
-        // $newData->title = $data['title'];
-        // $newData->description = $data['description'];
-        // // $newData->title = $data['price'];
+        $newCartoon = new Comic();
 
-        // $newData->save();
-        // dump($newData);
-        // return redirect()->route("data.show", $newData->id);
+        dump($newCartoon);
 
+        $newCartoon->title = $data['title'];
+        dump($data['title']);
+        $newCartoon->description =$data['description'];
+        dump($data['description']);
+        $newCartoon->thumb = $data['thumb'];
+        dump($data['thumb']);
+        $newCartoon->price=$data['price'];
+        $newCartoon->series=$data['series'];
+        $newCartoon->sale_date=$data['sale_date'] = date('Y-m-d H:i:s', strtotime($data['sale_date']));
+        $newCartoon->type=$data['type'];
+
+        $newCartoon->save();
     }
 
     /**
