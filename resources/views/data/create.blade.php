@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page_title', "New Dc")
+@section('page_title', "New Comic")
     
 @section('page_content')
 
@@ -10,21 +10,21 @@
         
         <div class="mb-3">
             <label for="titleInput" class="form-label">Title</label>
-            <input type="email" class="form-control" name="title" id="titleInput" placeholder="Title Comic">
+            <input type="text" class="form-control" name="title" id="titleInput" placeholder="Title Comic">
         </div>
 
         <div class="mb-3 pt-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+            <label for="text-input" class="form-label">Description</label>
+            <textarea class="form-control" name="text" id="text-input" rows="3" placeholder="Write here"></textarea>
         </div>
 
-        <div class="mb-3 pt-3">
+        {{-- <div class="mb-3 pt-3">
             <label for="priceInput" class="form-label">Price</label>
-            <input type="email" class="form-control" name="price" id="priceInput" placeholder="10$">
+            <input type="decimal" class="form-control" name="price" id="priceInput" placeholder="10$">
         </div>
-        
+         --}}
 
-        <div class=" container btn-group pt-5">
+        {{-- <div class=" container btn-group pt-5">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               Choose your img
             </button>
@@ -33,7 +33,7 @@
               <li><button><img src="https://nientepopcorn.b-cdn.net/wp-content/uploads/2019/01/tutti_i_film_dc_universe_watchmen_zack_snyder.jpg" alt=""></button></li>
               <li><button><img src="https://i0.wp.com/www.universalmovies.it/wp-content/uploads/2021/08/marvel-vs-dc-film-serie-tv-2023.jpg?resize=1210%2C642&ssl=1" alt=""></button></li>
             </ul>
-        </div>
+        </div> --}}
 
         <div class="d-flex gap-2 pt-5 justify-content-center">
             <button type="submit" class="btn btn-primary">
