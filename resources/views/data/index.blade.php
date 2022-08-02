@@ -12,8 +12,20 @@
     </div>
 
     {{-- //here i will stamp my array --}}
-
-    <div>
-
+    
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                @foreach ($data as $comic)
+                    <div class="col-4">
+                        {{$comic['title']}}
+                        {{$comic['price']}}
+                        {{$comic['series']}}
+                    </div>
+                @endforeach
+            </div>
+            
+        </div>
+        
     </div>
 @endsection
