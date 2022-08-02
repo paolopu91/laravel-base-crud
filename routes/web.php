@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +19,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics', "ComicController@index")->name('data.index');
+
+Route::get('/comics/create', "ComicController@create")->name('data.create');
+
 Route::get('/comics/{comic}',"ComicController@show")->name('data.show');

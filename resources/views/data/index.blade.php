@@ -3,13 +3,20 @@
 @section('page_title', "Db Comics")
     
 @section('page_content')
-    <div>
+    <div class=" container d-flex">
         <div class="container pt-5 text-center">
-            <button>
-                <a class="text-decoration-none" href="{{ route('home') }}">Back to Homepage</a>
-            </button>
+            
+            <a class="text-decoration-none border-bottom" href="{{ route('home') }}">Back to Homepage</a>
+        </div>
+
+        <div class="pt-5 container text-center">
+            
+            <a class="text-decoration-none border-bottom" href=" {{route('data.create')}} ">ADD NEW</a> 
+           
         </div>
     </div>
+
+   
 
     {{-- //here i will stamp my array --}}
     
@@ -18,7 +25,7 @@
             <div class="row pb-5 pt-5">
                 @foreach ($data as $comic)
                     <div class="col-4 border">
-                        <ul class="list-unstyled ">
+                        <ul class="list-unstyled text-center">
                             <li class="pt-5">
                               <h5 class="text-primary">{{$comic['title']}}</h5>  
                             </li>
@@ -30,11 +37,7 @@
                                     <button>
                                         <a class="text-decoration-none" href="{{ route('data.show', $comic->id)}}">Description</a>
                                     </button>
-                                </div>
-                               
-                            </li>
-                            <li>
-                                <span>{{$comic['price']}}</span>
+                                </div>   
                             </li>
                             <li>
                                 <span class="text-success">{{$comic['series']}} </span>
