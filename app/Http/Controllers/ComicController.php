@@ -53,7 +53,7 @@ class ComicController extends Controller
 
         return view("data.show",[
             "data"=> $data
-        ])->first;
+        ]);
     }
 
     /**
