@@ -2,12 +2,12 @@
     <div class="container">
         <div class="d-flex justify-content-between">
             <div class="border-bottom">
-                Comics
+                <a class="text-decoration-none" href="{{route('data.index')}}">Comics</a> 
             </div>
 
             <div>
                 <button>
-                    Aggiungi
+                   <a class="text-decoration-none" href="">Aggiungi</a> 
                 </button>
             </div>
         </div>
