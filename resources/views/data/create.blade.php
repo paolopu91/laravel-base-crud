@@ -5,7 +5,9 @@
 @section('page_content')
 
 <div class="container pt-5">
-    <form action="" method="post">
+    <form action="{{route('data.store')}}" method="post">
+    @csrf
+        
         <div class="mb-3">
             <label for="titleInput" class="form-label">Title</label>
             <input type="email" class="form-control" name="title" id="titleInput" placeholder="Title Comic">

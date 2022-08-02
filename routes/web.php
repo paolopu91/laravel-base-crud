@@ -23,3 +23,5 @@ Route::get('/comics', "ComicController@index")->name('data.index');
 Route::get('/comics/create', "ComicController@create")->name('data.create');
 
 Route::get('/comics/{comic}',"ComicController@show")->name('data.show');
+
+Route::post('/comics',"ComicController@store")->name('data.store');
