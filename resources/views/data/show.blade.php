@@ -10,7 +10,7 @@
             
             <a class="text-decoration-none border-bottom text-success" href=" {{route('data.edit', $data['id'])}} ">Edit</a> 
             
-            <form action="{{ route('data.destroy', $data->id) }}" method="POST">
+            <form action="{{ route('data.destroy', $data->id) }}" method="POST" class="form-delete">
                 @csrf
                 @method("DELETE")
 

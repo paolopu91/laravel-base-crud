@@ -105,7 +105,8 @@ class ComicController extends Controller
         $dates = $request->validate([
             "title"=>"required|min:5|max:255",
             "description"=>"required|min:5",
-            "price"=>"required"
+            "thumb"=>"required",
+            "price"=>"required",
         ]);
         // dd($dates);
 
