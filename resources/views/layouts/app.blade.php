@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        @yield('page_title')
         @include('partials.header')  
     </header>
    

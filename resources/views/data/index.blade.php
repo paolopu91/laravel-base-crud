@@ -14,6 +14,9 @@
             <a class="text-decoration-none border-bottom" href=" {{route('data.create')}} ">ADD NEW</a> 
            
         </div>
+
+        
+        
     </div>
 
    

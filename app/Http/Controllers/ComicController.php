@@ -97,7 +97,12 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = Comic::findOrfail($id);
+        $dates = $request->all();
+
+        $data->update($dates);
+
+        return redirect()->route('data.show', $data->id);
     }
 
     /**
