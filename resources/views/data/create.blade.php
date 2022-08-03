@@ -19,8 +19,8 @@
         </div>
 
         <div class="mb-3 pt-3">
-            <label for="thumbInpunt" class="form-label border-bottom">thumb</label>
-            <input type="text" class="form-control" name="thumb" id="thumbInpunt" placeholder="link here">
+            <label for="thumb" class="form-label border-bottom">thumb</label>
+            <input type="text" class="form-control" name="thumb" id="thumb" placeholder="link here">
         </div>
 
         <div class="mb-3 pt-3">
