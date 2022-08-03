@@ -5,7 +5,20 @@
 @section('page_content')
 
 <div class="container pt-5">
-
+@if($errors->any())
+<div class="alert alert-danger">
+     Validation Errors:
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>
+                {{$error}}
+            </li>
+        @endforeach
+    </ul>
+   {{-- @dump($errors) --}}
+</div>
+   
+@endif
     <form action="{{route('data.update', $data->id)}}" method="post">
     @csrf
     @method("PATCH")
